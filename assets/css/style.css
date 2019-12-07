@@ -1,0 +1,136 @@
+body{
+	font-family: 'Gupter', serif;
+	font-size: 15px;
+	background-color: #F2F2F2;
+}
+
+header{
+	background-color: #fff;
+}
+
+main{
+	background-color: #F2F2F2;
+	margin-top: 100px;
+	margin-bottom: 140px;
+}
+
+footer{
+	background-color: #fff;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+}
+a:hover{
+  text-decoration: none;
+  color:#B28707;
+}
+
+
+
+.collapse .navbar-nav .nav-item{
+	border-left: 1px solid #dcdcdc;
+}
+
+.collapse .navbar-nav .nav-item:hover{
+	background-color: #24cbd3;
+	color: #fff!important;
+}
+.collapse .navbar-nav .nav-item .nav-link:hover{
+	background-color: #24cbd3;
+	color: #fff!important;
+}
+
+.account .nav-item .nav-link:hover{
+	color: #000;
+}
+
+.account .nav-item .login:hover{
+	color: #24cbd3;
+}
+
+@media screen and (max-width: 575px) {
+	.main_container{
+		width: 100vw;
+	}
+}	
+
+@media screen and (min-width: 576px) {
+	.main_container{
+		width: 85vw;
+	}
+}
+@media screen and (min-width: 992px) {
+	.main_container{
+		width: 70vw;
+	}
+}
+
+.required{
+	color: red;
+}
+
+
+
+.table{
+    border-collapse: separate;
+}
+.table tbody td{
+	border: 1px solid #b5b5b5;
+}
+.table td, .table th{
+	padding: 0px;
+}
+.table td{
+	vertical-align: middle;
+	border-top: none;
+	padding-bottom: 0px;
+}
+.table td label{
+	margin-bottom: 0;
+}
+.table thead th{
+	border-bottom: none;
+}
+.table th{
+	text-align: center;
+	border-top: none;
+}
+.table_mainhead{
+	background-color: #1e3a5a;
+}
+.table_subhead{
+	background-color: #2f75b5;
+}
+.table tbody tr td .input_value{
+	width: 100%;
+	background-color: #dcebf8;
+	border: none;
+}
+.table tbody tr td .label_name{
+	width: 100%;
+	background-color: #fff;
+}
+.table tbody tr td .thead_name{
+	width: 100%;
+	background-color: #e7e6e6;
+	/*border: 1px dashed #9a9a9a;*/
+}
+.table .input_value{
+	background-color: #dcebf8;
+}
+.table .thead_name{
+	vertical-align: middle;
+	background-color: #e7e6e6;
+}
+
+.checkbox_label input[type=checkbox]{
+	width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+.checkbox_value{
+	right: 0;
+    position: absolute;
+}
