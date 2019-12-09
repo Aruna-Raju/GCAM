@@ -3,21 +3,17 @@ body{
 	font-size: 15px;
 	background-color: #F2F2F2;
 }
-
 header{
 	background-color: #fff;
 }
-
 main{
 	background-color: #F2F2F2;
-	margin-top: 100px;
-	margin-bottom: 140px;
+	margin-top: 120px;
+	margin-bottom: 50px;
 }
-
 footer{
 	background-color: #fff;
 }
-
 a{
   text-decoration:none;
   color:black;
@@ -27,12 +23,12 @@ a:hover{
   color:#B28707;
 }
 
-
-
 .collapse .navbar-nav .nav-item{
 	border-left: 1px solid #dcdcdc;
 }
-
+.collapse .navbar-nav .contact{
+	border-right: 1px solid #dcdcdc;
+}
 .collapse .navbar-nav .nav-item:hover{
 	background-color: #24cbd3;
 	color: #fff!important;
@@ -41,13 +37,15 @@ a:hover{
 	background-color: #24cbd3;
 	color: #fff!important;
 }
-
 .account .nav-item .nav-link:hover{
 	color: #000;
 }
-
-.account .nav-item .login:hover{
+/*.account .nav-item .login:hover{
 	color: #24cbd3;
+}*/
+.login_pagebutton{
+	background-color: #24cbd3;
+	border: none;
 }
 
 @media screen and (max-width: 575px) {
@@ -66,66 +64,63 @@ a:hover{
 		width: 70vw;
 	}
 }
-
 .required{
 	color: red;
 }
 
-
-
-.table{
+.physial_discription .table{
     border-collapse: separate;
 }
-.table tbody td{
+.physial_discription .table tbody td{
 	border: 1px solid #b5b5b5;
 }
-.table td, .table th{
+.physial_discription .table td, .table th{
 	padding: 0px;
 }
-.table td{
+.physial_discription .table td{
 	vertical-align: middle;
 	border-top: none;
 	padding-bottom: 0px;
 }
-.table td label{
+.physial_discription .table td label{
 	margin-bottom: 0;
 }
-.table thead th{
+.physial_discription .table thead th{
 	border-bottom: none;
 }
-.table th{
+.physial_discription .table th{
 	text-align: center;
 	border-top: none;
 }
-.table_mainhead{
+.physial_discription .table_mainhead{
 	background-color: #1e3a5a;
 }
-.table_subhead{
+.physial_discription .table_subhead{
 	background-color: #2f75b5;
 }
-.table tbody tr td .input_value{
+.physial_discription .table tbody tr td .input_value{
 	width: 100%;
 	background-color: #dcebf8;
 	border: none;
 }
-.table tbody tr td .label_name{
+.physial_discription .table tbody tr td .label_name{
 	width: 100%;
 	background-color: #fff;
 }
-.table tbody tr td .thead_name{
+.physial_discription .table tbody tr td .thead_name{
 	width: 100%;
 	background-color: #e7e6e6;
 	/*border: 1px dashed #9a9a9a;*/
 }
-.table .input_value{
+.physial_discription .table .input_value{
 	background-color: #dcebf8;
 }
-.table .thead_name{
+.physial_discription .table .thead_name{
 	vertical-align: middle;
 	background-color: #e7e6e6;
 }
 
-.checkbox_label input[type=checkbox]{
+/*.checkbox_label input[type=checkbox]{
 	width: 15px;
     height: 15px;
     margin: 5px;
@@ -133,4 +128,106 @@ a:hover{
 .checkbox_value{
 	right: 0;
     position: absolute;
+}*/
+.radio_option .custom-control-label{
+	padding-left: 20px;
+}
+.radio_option .custom-control-label::before{
+	left: -0.5rem;
+}
+.radio_option .custom-control-label::after{
+	left: -0.5rem;
+}
+/*.toggle-group .btn-light{
+	background-color: #E2E6E7;
+}*/
+
+
+
+
+
+/* --------- Login Page --------- */
+.login_container{
+	width: 75%;
+}
+.main_login{
+	display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.main_login .login_box{
+	display: flex;
+    background-color: #fff;
+    padding: 25px;
+    -webkit-animation-name: fadeShadow;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+    animation-name: fadeShadow;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.main_login .loginbox_1{
+	flex-basis: 100%;
+}
+.main_login .loginbox_2{
+	font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_login .loginbox_3{
+	flex-basis: 100%;
+}
+.main_login .loginbox_1 .gcam_login{
+	width: auto;
+}
+
+.main_login .loginbox_3 .national_signon{
+	width: auto;
+}
+
+.main_login .loginbox_2 .vertical_line{
+	width: 1px;
+    height: 100%;
+    background: rgba(204, 204, 204, 0.8);
+}
+.main_login .loginbox_2 .vertical_text{
+	background: #fff;
+    position: absolute;
+    padding: 10px;
+    font-size: 25px;
+}
+.login_btn{
+	background-color: #302d6b;
+}
+
+@media only screen and (max-width: 759px){
+	.login_container{
+		width: 85%;
+	}
+	.main_login .login_box{
+		padding: 10px;
+		flex-direction: column;
+	}
+
+	.main_login .loginbox_2{
+		padding: 25px 0 15px 0;
+	}
+	.main_login .loginbox_2 .vertical_line{
+		height: 1px;
+	    width: 100%;
+	    background: rgba(204, 204, 204, 0.8);
+	}
+}
+@media only screen and (max-width: 400px){
+	.login_container{
+		width: 100%;
+	}
 }
